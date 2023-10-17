@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Servicios de eventos con temática de Picnic">
+    <meta name="keywords" content="Picnic, Eventos, Celebraciones, Cumpleaños, Fiestas, Boda, Babyshower, Aniversario, turismo">
+    <title>Nómada Picnic</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Estilos.css">
+    <style>
+             @media (max-width: 991.98px) {
+
+ 
+.productos {
+
+grid-template-columns: repeat(2, 1fr);  
+font-size: 1.5em;
+  }
+}
+
+@media (max-width: 767.98px) {
+  
+.productos {  
+    grid-template-columns: repeat(1, 1fr);
+    font-size: 1.2em; 
+  }
+}
+    </style>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+</head>
+<body>
+  <div class="fondo"></div>
+
+  <header>
+    <h1 class="titulo text-center">NÓMADA PICNIC🧺</h1>
+    <nav class="navbar navbar-expand-md navbar-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div style="background-color: #da637c"; class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html" style="color: whitesmoke;">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../Pages/Productos.html" style="color: whitesmoke;">Productos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../Pages/Contacto.html" style="color: whitesmoke;">Contacto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../Pages/PreguntasFrecuentes.html" style="color: whitesmoke;">Preguntas Frecuentes</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="bloque">
+        <h2 class="h2">✨Creamos momentos inolvidables✨</h2>
+    </section>
+
+    <div style="text-align: center;">
+        <h4 class="h4">Productos</h4>
+    </div>
+
+    <section class="productos">
+        <div class="product">
+            <img class="imgpro" src="../DugarteSalome+preEntrega3JS/Img/picnicparados.png" alt="Picnic para 2 personas">
+            <h5>Picnic para 2</h5>
+            <p>Incluye: Traslado del mobiliario, armado, desarmado, 1 bebida de cortesía, hielo y agua saborizada naturalmente. Consultar por otros colores para la deco ❤️🧺</p>
+            <span class="precio">$1000</span>
+            <button class="agregar-al-carrito-button" data-producto-id="1">Agregar al carrito</button>
+        </div>
+        <div class="product">
+            <img class="imgpro" src="../DugarteSalome+preEntrega3JS/Img/personaadicional.png" alt="Persona adicional">
+            <h5>Persona adicional</h5>
+            <p>Si tu picnic es para más de dos personas, cada personal adicional tiene este valor ❤️✨</p>
+            <span class="precio">$1000</span>
+            <button class="agregar-al-carrito-button" data-producto-id="2">Agregar al carrito</button>
+        </div>
+        <div class="product">
+            <img class="imgpro" src="../DugarteSalome+preEntrega3JS/Img/boxsaladopequeno.png" alt="Box salado Pequeño">
+            <h5>Box Salado Pequeño</h5>
+            <p>Para 2 personas 
+                Puede hacerse versión vegetariana, con mini hamburguesas de milanesas de berenjena o falafel ❤️</p>
+            <span class="precio">$1000</span>
+            <button class="agregar-al-carrito-button" data-producto-id="3">Agregar al carrito</button>
+        </div>
+        <div class="product">
+            <img class="imgpro" src="../DugarteSalome+preEntrega3JS/Img/boxsaladogrande.png" alt="Box salado Grande">
+            <h5>Box Salado Grande</h5>
+            <p>Para 5/6 personas 
+                Puede hacerse versión vegetariana con mini hamburguesas con milanesas de berenjena o falafel ❤️</p>
+            <span class="precio">$1000</span>
+            <button class="agregar-al-carrito-button" data-producto-id="4">Agregar al carrito</button>
+        </div>
+        <div class="product">
+            <img class="imgpro" src="../DugarteSalome+preEntrega3JS/Img/paletas.png" alt="Paletas de helado">
+            <h5>Paletas de helado 🍦</h5>
+            <p>Baileys |
+                Mojito |
+                Piña colada |
+                Vodka |
+                Daiquiri</p> 
+                <span class="precio">$1000</span>
+            <button class="agregar-al-carrito-button" data-producto-id="5">Agregar al carrito</button>
+        </div>
+        <div class="product">
+            <img class="imgpro" src="../DugarteSalome+preEntrega3JS/Img/tabladefrutas.png" alt="Tabla de frutas">
+            <h5>Tabla de Frutas</h5>
+            <p>Frutas de Estación</p>
+            <span class="precio">$1000</span>
+            <button class="agregar-al-carrito-button" data-producto-id="6">Agregar al carrito</button>
+        </div>
+        <section class="carrito">
+          <h3>Carrito de Compras</h3>
+          <div id="carrito-container">
+            <!-- Aquí se mostrarán los productos del carrito -->
+          </div>
+          <div id="total-container" class="total">
+            <h3>Total: $<span id="total-amount">0</span></h3>
+          </div>
+        </section>
+        
+  </main>
+
+  <footer style="background-color: pink;" class="py-3">
+    <div class="container text-center">
+      <p class="mb-0">2023 Nómada Picnic. Todos los derechos reservados.</p>
+      <a style=" color: #da637c;" " class="py-3" href="https://api.whatsapp.com/message/H7IOYPAYKWBON1?autoload=1&app_absent=0">Escribenos por Whatsapp</a>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script src="carrito.js"></script>
+
+</body>
+</html>

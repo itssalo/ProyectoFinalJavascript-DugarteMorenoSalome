@@ -1,0 +1,45 @@
+[
+    {
+      "id": 1,
+      "nombre": "Picnic para 2 personas",
+      "precio": 1000,
+      "imagen": "ruta/a/imagen1.jpg",
+      "descripcion": "Incluye: Traslado del mobiliario, armado, desarmado, 1 bebida de cortesía, hielo y agua saborizada naturalmente. Consultar por otros colores para la deco."
+    },
+    {
+      "id": 2,
+      "nombre": "Persona adicional",
+      "precio": 1000,
+      "imagen": "ruta/a/imagen2.jpg",
+      "descripcion": "Si tu picnic es para más de dos personas, cada persona adicional tiene este valor."
+    },
+    {
+      "id": 3,
+      "nombre": "Box Salado Pequeño",
+      "precio": 1000,
+      "imagen": "ruta/a/imagen3.jpg",
+      "descripcion": "Para 2 personas. Puede hacerse versión vegetariana, con mini hamburguesas de milanesas de berenjena o falafel."
+    },
+    {
+      "id": 4,
+      "nombre": "Box Salado Grande",
+      "precio": 1000,
+      "imagen": "ruta/a/imagen4.jpg",
+      "descripcion": "Para 5/6 personas. Puede hacerse versión vegetariana con mini hamburguesas con milanesas de berenjena o falafel."
+    },
+    {
+      "id": 5,
+      "nombre": "Paletas de helado",
+      "precio": 1000,
+      "imagen": "ruta/a/imagen5.jpg",
+      "descripcion": "Baileys, Mojito, Piña colada, Vodka, Daiquiri."
+    },
+    {
+      "id": 6,
+      "nombre": "Tabla de Frutas",
+      "precio": 1000,
+      "imagen": "ruta/a/imagen6.jpg",
+      "descripcion": "Frutas de Estación."
+    }
+  ]
+  
